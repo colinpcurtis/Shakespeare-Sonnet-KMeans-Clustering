@@ -1,4 +1,4 @@
-with open("shakespere_sonnett.txt") as file:
+with open("shakespere_sonnets.txt") as file:
     new_file = open("sonnett", "w")
     for line in file:
         line = line.strip()
@@ -7,12 +7,12 @@ with open("shakespere_sonnett.txt") as file:
             new_file.write("\n")
     new_file.close()
 
-file = open("sonnett", "r")
+file = open("sonnets", "r")
 data = file.read().replace("?", "").replace(",", "").replace("!", "").replace("'", "e").replace(":", "") \
     .replace(";", "").replace("-", "").replace(".", "")
 file.close()
 
-file = open("sonnett", "r")
+file = open("sonnets", "r")
 new_data = []
 for line in file:
     new_data.append(line.strip().split())
