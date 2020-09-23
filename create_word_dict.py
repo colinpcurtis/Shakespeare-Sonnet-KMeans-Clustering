@@ -1,7 +1,7 @@
 import string
 import operator
 import csv
-from poetry_analysis import poems
+from reading_poem_txt_files import poems
 
 
 def flatten(array):
