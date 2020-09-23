@@ -1,5 +1,5 @@
 import pandas as pd
-from poetry_analysis import poems
+from reading_poem_txt_files.py import poems
 from create_word_dict import remove_punctuation
 
 data = pd.read_csv("word_dictionary.csv", header=None)
