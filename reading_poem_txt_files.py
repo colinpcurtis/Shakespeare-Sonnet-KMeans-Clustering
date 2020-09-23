@@ -1,5 +1,5 @@
 with open("shakespere_sonnets.txt") as file:
-    new_file = open("sonnett", "w")
+    new_file = open("sonnet", "w")
     for line in file:
         line = line.strip()
         if len(line) > 15:
